@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+    body{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    table{
+        border-collapse: collapse;
+    }
+
+    td {
+        border:3px solid black;
+        padding: 16px 40px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    #question{
+        font-size: 80px;
+        font-weight: 500;
+    }
+</style>
+
+    <table>
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td colspan="2" rowspan="2" id="question">?</td>
+            <td>2,4</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,4</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+</body>
+</html>
